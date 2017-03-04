@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3083560355E97039AEBE5016 /* Pods_QuickLens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590344F12E1888FA0DB1F734 /* Pods_QuickLens.framework */; };
+		605E2C512062A6BB00315361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605E2C412062A6BA00315361 /* AppDelegate.swift */; };
+		605E2C522062A6BB00315361 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605E2C432062A6BA00315361 /* Info.plist */; };
+		605E2C532062A6BB00315361 /* SNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605E2C452062A6BA00315361 /* SNS.swift */; };
+		605E2C542062A6BB00315361 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605E2C462062A6BA00315361 /* User.swift */; };
+		605E2C602062A6E000315361 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 605E2C492062A6BA00315361 /* Info.plist */; };
+		606458502062A93F004F2BE8 /* Lenses.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064584C2062A93F004F2BE8 /* Lenses.generated.swift */; };
+		606458512062A93F004F2BE8 /* Utilities.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064584D2062A93F004F2BE8 /* Utilities.generated.swift */; };
+		606458522062A93F004F2BE8 /* Workaround.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064584E2062A93F004F2BE8 /* Workaround.generated.swift */; };
+		606458532062A93F004F2BE8 /* Factories.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6064584F2062A93F004F2BE8 /* Factories.generated.swift */; };
+		606458542062AF82004F2BE8 /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605E2C4D2062A6BA00315361 /* UserSpec.swift */; };
+		606458572062B667004F2BE8 /* CustomerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606458562062B667004F2BE8 /* CustomerType.swift */; };
+		A02BCAA201C96AA2F4BAF9C3 /* Pods_QuickLensTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F64F32D2A9FA0B6E60D8AC /* Pods_QuickLensTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		606168831E6A965100A95DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 606168661E6A965100A95DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6061686D1E6A965100A95DE4;
+			remoteInfo = Quick_Lens;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BABF06CC05784EA3EC6402D /* Pods-QuickLens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLens.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLens/Pods-QuickLens.debug.xcconfig"; sourceTree = "<group>"; };
+		590344F12E1888FA0DB1F734 /* Pods_QuickLens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		605E2C412062A6BA00315361 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		605E2C432062A6BA00315361 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605E2C452062A6BA00315361 /* SNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNS.swift; sourceTree = "<group>"; };
+		605E2C462062A6BA00315361 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		605E2C492062A6BA00315361 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605E2C4D2062A6BA00315361 /* UserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
+		6061686E1E6A965100A95DE4 /* QuickLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		606168821E6A965100A95DE4 /* QuickLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6064584C2062A93F004F2BE8 /* Lenses.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lenses.generated.swift; sourceTree = "<group>"; };
+		6064584D2062A93F004F2BE8 /* Utilities.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.generated.swift; sourceTree = "<group>"; };
+		6064584E2062A93F004F2BE8 /* Workaround.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workaround.generated.swift; sourceTree = "<group>"; };
+		6064584F2062A93F004F2BE8 /* Factories.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factories.generated.swift; sourceTree = "<group>"; };
+		606458562062B667004F2BE8 /* CustomerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerType.swift; sourceTree = "<group>"; };
+		8595E863840ADB59B975FAEB /* Pods-QuickLensTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLensTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLensTests/Pods-QuickLensTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6F64F32D2A9FA0B6E60D8AC /* Pods_QuickLensTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickLensTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0799D754EED2F7BEA4845C8 /* Pods-QuickLens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLens.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLens/Pods-QuickLens.release.xcconfig"; sourceTree = "<group>"; };
+		E15BCD5E62FFDAEAD110A983 /* Pods-QuickLensTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickLensTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickLensTests/Pods-QuickLensTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6061686B1E6A965100A95DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3083560355E97039AEBE5016 /* Pods_QuickLens.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6061687F1E6A965100A95DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02BCAA201C96AA2F4BAF9C3 /* Pods_QuickLensTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26D329017E8C5B1C524D2D8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				590344F12E1888FA0DB1F734 /* Pods_QuickLens.framework */,
+				B6F64F32D2A9FA0B6E60D8AC /* Pods_QuickLensTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3343D4CFC22987A458E2AF9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BABF06CC05784EA3EC6402D /* Pods-QuickLens.debug.xcconfig */,
+				C0799D754EED2F7BEA4845C8 /* Pods-QuickLens.release.xcconfig */,
+				E15BCD5E62FFDAEAD110A983 /* Pods-QuickLensTests.debug.xcconfig */,
+				8595E863840ADB59B975FAEB /* Pods-QuickLensTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		605E2C402062A6BA00315361 /* QuickLens */ = {
+			isa = PBXGroup;
+			children = (
+				605E2C422062A6BA00315361 /* Supporting Files */,
+				605E2C442062A6BA00315361 /* User */,
+				605E2C412062A6BA00315361 /* AppDelegate.swift */,
+			);
+			path = QuickLens;
+			sourceTree = "<group>";
+		};
+		605E2C422062A6BA00315361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				605E2C432062A6BA00315361 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		605E2C442062A6BA00315361 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				606458562062B667004F2BE8 /* CustomerType.swift */,
+				605E2C452062A6BA00315361 /* SNS.swift */,
+				605E2C462062A6BA00315361 /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		605E2C472062A6BA00315361 /* QuickLensTests */ = {
+			isa = PBXGroup;
+			children = (
+				605E2C482062A6BA00315361 /* Supporting Files */,
+				605E2C4A2062A6BA00315361 /* User */,
+				605E2C4E2062A6BA00315361 /* Utility */,
+			);
+			path = QuickLensTests;
+			sourceTree = "<group>";
+		};
+		605E2C482062A6BA00315361 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				605E2C492062A6BA00315361 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		605E2C4A2062A6BA00315361 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				605E2C4D2062A6BA00315361 /* UserSpec.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		605E2C4E2062A6BA00315361 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6064584F2062A93F004F2BE8 /* Factories.generated.swift */,
+				6064584C2062A93F004F2BE8 /* Lenses.generated.swift */,
+				6064584D2062A93F004F2BE8 /* Utilities.generated.swift */,
+				6064584E2062A93F004F2BE8 /* Workaround.generated.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		606168651E6A965100A95DE4 = {
+			isa = PBXGroup;
+			children = (
+				26D329017E8C5B1C524D2D8F /* Frameworks */,
+				3343D4CFC22987A458E2AF9F /* Pods */,
+				6061686F1E6A965100A95DE4 /* Products */,
+				605E2C402062A6BA00315361 /* QuickLens */,
+				605E2C472062A6BA00315361 /* QuickLensTests */,
+			);
+			sourceTree = "<group>";
+		};
+		6061686F1E6A965100A95DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6061686E1E6A965100A95DE4 /* QuickLens.app */,
+				606168821E6A965100A95DE4 /* QuickLensTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6061686D1E6A965100A95DE4 /* QuickLens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6061688B1E6A965100A95DE4 /* Build configuration list for PBXNativeTarget "QuickLens" */;
+			buildPhases = (
+				4F38520259D7716AF4DD043C /* [CP] Check Pods Manifest.lock */,
+				6061686A1E6A965100A95DE4 /* Sources */,
+				6061686B1E6A965100A95DE4 /* Frameworks */,
+				6061686C1E6A965100A95DE4 /* Resources */,
+				9022F6B538232841EE01F388 /* [CP] Embed Pods Frameworks */,
+				272A5A010E0511CFC2FF3896 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickLens;
+			productName = Quick_Lens;
+			productReference = 6061686E1E6A965100A95DE4 /* QuickLens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		606168811E6A965100A95DE4 /* QuickLensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6061688E1E6A965100A95DE4 /* Build configuration list for PBXNativeTarget "QuickLensTests" */;
+			buildPhases = (
+				E4228B138E91DC6B66AE64FE /* [CP] Check Pods Manifest.lock */,
+				606458552062B54E004F2BE8 /* Sourcery Run Script */,
+				6061687E1E6A965100A95DE4 /* Sources */,
+				6061687F1E6A965100A95DE4 /* Frameworks */,
+				606168801E6A965100A95DE4 /* Resources */,
+				56463AB2CA5D764C23DD25AC /* [CP] Embed Pods Frameworks */,
+				82F99D09903E6BB5DB08921D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				606168841E6A965100A95DE4 /* PBXTargetDependency */,
+			);
+			name = QuickLensTests;
+			productName = Quick_LensTests;
+			productReference = 606168821E6A965100A95DE4 /* QuickLensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		606168661E6A965100A95DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Takeshi Ihara";
+				TargetAttributes = {
+					6061686D1E6A965100A95DE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HKDHURHY83;
+						ProvisioningStyle = Automatic;
+					};
+					606168811E6A965100A95DE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HKDHURHY83;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6061686D1E6A965100A95DE4;
+					};
+				};
+			};
+			buildConfigurationList = 606168691E6A965100A95DE4 /* Build configuration list for PBXProject "QuickLens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 606168651E6A965100A95DE4;
+			productRefGroup = 6061686F1E6A965100A95DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6061686D1E6A965100A95DE4 /* QuickLens */,
+				606168811E6A965100A95DE4 /* QuickLensTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6061686C1E6A965100A95DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605E2C522062A6BB00315361 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		606168801E6A965100A95DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605E2C602062A6E000315361 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		272A5A010E0511CFC2FF3896 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLens/Pods-QuickLens-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F38520259D7716AF4DD043C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickLens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56463AB2CA5D764C23DD25AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickLensTests/Pods-QuickLensTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLensTests/Pods-QuickLensTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		606458552062B54E004F2BE8 /* Sourcery Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Sourcery Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Sourcery/bin/sourcery --config Sourcery/.config.yml";
+		};
+		82F99D09903E6BB5DB08921D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLensTests/Pods-QuickLensTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9022F6B538232841EE01F388 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickLens/Pods-QuickLens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4228B138E91DC6B66AE64FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickLensTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6061686A1E6A965100A95DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605E2C532062A6BB00315361 /* SNS.swift in Sources */,
+				606458572062B667004F2BE8 /* CustomerType.swift in Sources */,
+				605E2C512062A6BB00315361 /* AppDelegate.swift in Sources */,
+				605E2C542062A6BB00315361 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6061687E1E6A965100A95DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606458502062A93F004F2BE8 /* Lenses.generated.swift in Sources */,
+				606458532062A93F004F2BE8 /* Factories.generated.swift in Sources */,
+				606458522062A93F004F2BE8 /* Workaround.generated.swift in Sources */,
+				606458512062A93F004F2BE8 /* Utilities.generated.swift in Sources */,
+				606458542062AF82004F2BE8 /* UserSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		606168841E6A965100A95DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6061686D1E6A965100A95DE4 /* QuickLens */;
+			targetProxy = 606168831E6A965100A95DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		606168891E6A965100A95DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6061688A1E6A965100A95DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6061688C1E6A965100A95DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BABF06CC05784EA3EC6402D /* Pods-QuickLens.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HKDHURHY83;
+				INFOPLIST_FILE = "QuickLens/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonchalant.QuickLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6061688D1E6A965100A95DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0799D754EED2F7BEA4845C8 /* Pods-QuickLens.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HKDHURHY83;
+				INFOPLIST_FILE = "QuickLens/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonchalant.QuickLens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		6061688F1E6A965100A95DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15BCD5E62FFDAEAD110A983 /* Pods-QuickLensTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HKDHURHY83;
+				INFOPLIST_FILE = "QuickLensTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonchalant.QuickLensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLens.app/QuickLens";
+			};
+			name = Debug;
+		};
+		606168901E6A965100A95DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8595E863840ADB59B975FAEB /* Pods-QuickLensTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HKDHURHY83;
+				INFOPLIST_FILE = "QuickLensTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonchalant.QuickLensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickLens.app/QuickLens";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		606168691E6A965100A95DE4 /* Build configuration list for PBXProject "QuickLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				606168891E6A965100A95DE4 /* Debug */,
+				6061688A1E6A965100A95DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6061688B1E6A965100A95DE4 /* Build configuration list for PBXNativeTarget "QuickLens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6061688C1E6A965100A95DE4 /* Debug */,
+				6061688D1E6A965100A95DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6061688E1E6A965100A95DE4 /* Build configuration list for PBXNativeTarget "QuickLensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6061688F1E6A965100A95DE4 /* Debug */,
+				606168901E6A965100A95DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 606168661E6A965100A95DE4 /* Project object */;
+}

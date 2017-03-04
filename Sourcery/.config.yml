@@ -1,0 +1,8 @@
+sources:
+  - ../QuickLens/User
+templates:
+  - ../Sourcery/Templates
+output:
+  ../QuickLensTests/Utility
+args:
+  target: "QuickLens"

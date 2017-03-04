@@ -1,0 +1,37 @@
+{% macro printParameter type variable %}{{ variable.name }}: {% call printTypeValue type variable.typeName %}{% endmacro %}
+{% macro printTypeValue type typeName %}{% for containedType in type.containedTypes where containedType.localName == typeName.name %}{{ type.name }}.{% endfor %}{% for key,typealias in type.typealiases where typealias.aliasName == typeName.name %}{{ type.name }}.{% endfor %}{% call printTypeNameValue variable.typeName.name %}{% endmacro %}
+{% macro printTypeNameValue typeName %}{% set isProtocol %}{% call isProtocol typeName %}{% endset %}{{ typeName }}{% if isProtocol == "true" or typeName == "Any" %}Factory{% endif %}.generate(){% endmacro %}
+{% macro isProtocol typeName %}{% for protocol in types.protocols where protocol.name == typeName %}true{% empty %}false{% endfor %}{% endmacro %}
+@testable import {{ argument.target }}
+
+{% for struct in types.structs where not struct.isGeneric %}
+extension {{ struct.name }}: FactoryProvidable {
+    static func generate() -> {{ struct.name }} {
+        return {{ struct.name }}(
+        {% if struct.initializers.count == 0 %}
+            {% for variable in struct.storedVariables where variable.defaultValue == nil or variable.isMutable %}
+            {% call printParameter struct variable %}{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        )
+        {% else %}
+            {% for parameter in struct.initializers.first.parameters %}
+            {{ parameter.name }}: {% call printTypeNameValue parameter.typeName.name %}{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        ){% if struct.initializers.first.name|hasPrefix:"init?" %}!{% endif %}
+        {% endif %}
+    }
+}
+
+{% endfor %}
+{% for enum in types.enums where not enum.isGeneric %}
+extension {{ enum.name }}: FactoryProvidable {
+    static func generate() -> {{ enum.name }} {
+        return .{{ enum.cases.first.name }}{% if enum.cases.first.hasAssociatedValue %}(
+            {% for variable in enum.cases.first.associatedValues %}
+            {% if not variable.localName == nil %}{{ variable.localName }}: {% endif %}{% call printTypeValue enum variable.typeName %}{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        ){% endif %}
+    }
+}
+
+{% endfor %}

@@ -1,0 +1,7 @@
+@testable import {{ argument.target }}
+
+struct AnyFactory {
+    static func generate() -> Any {
+        return -1
+    }
+}

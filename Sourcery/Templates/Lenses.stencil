@@ -1,0 +1,42 @@
+@testable import {{ argument.target }}
+
+infix operator *~: MultiplicationPrecedence
+infix operator |>: AdditionPrecedence
+
+struct Lens<A, B> {
+    let get: (A) -> B
+    let set: (B, A) -> A
+}
+
+func * <A, B, C> (lhs: Lens<A, B>, rhs: Lens<B, C>) -> Lens<A, C> {
+    return Lens<A, C>(
+        get: { rhs.get(lhs.get($0)) },
+        set: { lhs.set(rhs.set($0, lhs.get($1)), $1) }
+    )
+}
+
+func *~ <A, B> (lhs: Lens<A, B>, rhs: B) -> (A) -> A {
+    return { lhs.set(rhs, $0) }
+}
+
+func |> <A, B> (x: A, f: (A) -> B) -> B {
+    return f(x)
+}
+
+func |> <A, B, C> (f: @escaping (A) -> B, g: @escaping (B) -> C) -> (A) -> C {
+    return { g(f($0)) }
+}
+
+{% for type in types.structs where type.initializers.count == 0 and not type.isGeneric %}
+extension {{ type.name }}: LensCompatible {}
+extension LensExtension where Base == {{ type.name }} {
+    {% for variable in type.storedVariables where variable.defaultValue == nil or variable.isMutable %}
+    static let {{ variable.name }} = Lens<{{ type.name }}, {{ variable.typeName }}>(
+        get: { $0.{{ variable.name }} },
+        set: { {{ variable.name }}, base in
+            {{ type.name }}({% for argument in type.storedVariables where argument.defaultValue == nil or argument.isMutable %}{{ argument.name }}: {% if variable.name == argument.name %}{{ variable.name }}{% else %}base.{{ argument.name }}{% endif %}{% if not forloop.last %}, {% endif %}{% endfor %})
+        }
+    ){% endfor %}
+}
+
+{% endfor %}
